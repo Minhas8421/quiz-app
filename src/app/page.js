@@ -19,10 +19,10 @@ export default function QuizApp() {
     else {
       // console.log('hyy')
     }
-    setTimeout(function () {
-      setCurrentQuestIndex(currentQuestIndex + 1);
-      setSelectedOptionIndex(null);
-    }, 500);
+    // setTimeout(function () {
+    //   setCurrentQuestIndex(currentQuestIndex + 1);
+    //   setSelectedOptionIndex(null);
+    // }, 500);
   };
 
   const nextQuestion = () => {
