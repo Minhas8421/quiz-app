@@ -17,12 +17,12 @@ export default function QuizApp() {
 
     }
     else {
-      console.log('hyy')
+      // console.log('hyy')
     }
     setTimeout(function () {
       setCurrentQuestIndex(currentQuestIndex + 1);
       setSelectedOptionIndex(null);
-    }, 300);
+    }, 500);
   };
 
   const nextQuestion = () => {
