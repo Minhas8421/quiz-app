@@ -22,7 +22,7 @@ export default function QuizApp() {
     setTimeout(function () {
       setCurrentQuestIndex(currentQuestIndex + 1);
       setSelectedOptionIndex(null);
-    }, 500);
+    }, 300);
   };
 
   const nextQuestion = () => {
