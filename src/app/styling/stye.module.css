@@ -12,3 +12,19 @@
 .list-group-item:hover {
     background-color: #ceceff;
 }
+
+.list-group-item-selected {
+    background-color: #ceceff;
+    cursor: pointer;
+    list-style: none;
+    padding: 12px;
+    border: 2px solid #4980e5;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    color: blue;
+    font-weight: bold;
+}
+
+.container-a {
+    display: contents;
+}

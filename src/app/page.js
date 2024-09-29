@@ -17,12 +17,11 @@ export default function QuizApp() {
 
     }
     else {
-      // console.log('hyy')
     }
-    setTimeout(function () {
-      setCurrentQuestIndex(currentQuestIndex + 1);
-      setSelectedOptionIndex(null);
-    }, 300);
+    // setTimeout(function () {
+    //   setCurrentQuestIndex(currentQuestIndex + 1);
+    //   setSelectedOptionIndex(null);
+    // }, 300);
   };
 
   const nextQuestion = () => {
@@ -66,11 +65,12 @@ export default function QuizApp() {
 
   return (
     <>
+      {/* className={`container my-5 ${styles['container-a']}`} */}
       <div className="container my-5">
         <div className="row">
           <div className="col-md-3 col-sm-3"></div>
           <div className="col-md-6 col-sm-6">
-            <div className="card text-center">
+            <div className="card text-center" key={questions[currentQuestIndex]?.id}>
               <div className="card-header">
                 <h3>Question # {questions[currentQuestIndex]?.id}</h3>
               </div>
@@ -79,9 +79,9 @@ export default function QuizApp() {
                 <ul className="list-group">
                   {questions[currentQuestIndex]?.options.map((option, index) => (
                     <li
-                      // className={selectedOptionIndex === index ? "list-group-item active" : "list-group-item"}
+                      className={selectedOptionIndex === index ? `${styles['list-group-item-selected']}` : `${styles['list-group-item']}`}
                       onClick={() => onOptionSelected(index)}
-                      className={styles['list-group-item']}
+                    // className={styles['list-group-item']}
                     // className={`$(styles['list-group-item'] $(styles['list-group-item:hover']`}
                     // style={{
                     //   backgroundColor: index === questions[currentQuestIndex].correctOptionIndex ? 'green' : index !== questions[currentQuestIndex].correctOptionIndex ? 'red' : 'black',
