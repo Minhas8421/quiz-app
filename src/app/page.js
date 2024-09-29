@@ -17,7 +17,7 @@ export default function QuizApp() {
 
     }
     else {
-
+      console.log('hyy')
     }
     setTimeout(function () {
       setCurrentQuestIndex(currentQuestIndex + 1);
