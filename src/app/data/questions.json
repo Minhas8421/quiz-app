@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "statement": "1. Defence day is observed on?",
+        "options": [
+            "6th September",
+            "11th September",
+            "7th September",
+            "9th September"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "id": 2,
+        "statement": "2. Mirpur is a famous city of?",
+        "options": [
+            "KPK",
+            "Punjab",
+            "Azad Kashmir",
+            "Sindh"
+        ],
+        "correctOptionIndex": 2
+    },
+    {
+        "id": 3,
+        "statement": "3. Who was the First woman Governor of State Bank of Pakistan?",
+        "options": [
+            "Noor Jahan",
+            "Dr Shamshad Akhter",
+            "Farzana Raja",
+            "Dr Ashraf Abbasi"
+        ],
+        "correctOptionIndex": 1
+    },
+    {
+        "id": 4,
+        "statement": "Shakarparrian is situated in?",
+        "options": [
+            "Islamabad",
+            "Rawalpindi",
+            "Murree",
+            "Peshawar"
+        ],
+        "correctOptionIndex": 0
+    },
+    {
+        "id": 5,
+        "statement": "National code of Pakistan is?",
+        "options": [
+            "PAK",
+            "PK",
+            "PAK 1",
+            "PKR"
+        ],
+        "correctOptionIndex": 1
+    }
+]

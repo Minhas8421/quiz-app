@@ -18,7 +18,9 @@ body {
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  /* background: var(--background); */
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -33,6 +35,57 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.card-header,
+.card-body,
+.card-footer {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+.card-header h3,
+.card-body h5,
+.card-footer,
+.card-header h1 {
+  color: #1d0289;
+  font-weight: bold;
+}
+
+button.btn.btn-primary {
+  background-color: #8787c1;
+}
+
+p.card-text.score {
+  border: 7px solid darkblue;
+  border-radius: 100%;
+  width: max-content;
+  padding: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: darkblue;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  to {
+    opacity: 1
+  }
+
+  50% {
+    opacity: 0
+  }
+}
+
+.card-body.score {
+  display: grid;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 0px 0px 0px 0px #0000, 0 0 0px 0px #0000, 0 0 0px 0px #0000, 0 0 #0000, 0 0 20px 3px #fff;
 }
 
 @media (prefers-color-scheme: dark) {
